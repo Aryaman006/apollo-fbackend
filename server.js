@@ -9,7 +9,7 @@ const fs = require("fs");
 const app = express();
 
 app.use(cors({
-  origin: "https://apollo-frontend-blond.vercel.app/", 
+  origin: "https://apollo-frontend-blond.vercel.app", 
 }));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
